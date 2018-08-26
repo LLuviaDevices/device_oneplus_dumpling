@@ -23,9 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
 # Inherit some common LiquidRemix stuff.
-$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
+$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
 
-PRODUCT_NAME := liquid_dumpling
+PRODUCT_NAME := lluvia_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -40,7 +40,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5T PRODUCT_NAME=OnePlus5T
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus5T-user 8.1.0 OPM1.171019.011 1808081927 release-keys"
-    DEVICE_MAINTAINERS="SyRkLeS420"
 
 BUILD_FINGERPRINT := OnePlus/OnePlus5T/OnePlus5T:8.1.0/OPM1.171019.011/1808081927:user/release-keys
 
